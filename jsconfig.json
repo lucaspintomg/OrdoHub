@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/app/*": ["./src/app/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/modules/*": ["./src/modules/*"],
+      "@/entities/*": ["./src/entities/*"],
+      "@/shared/*": ["./src/shared/*"],
+      "@/infrastructure/*": ["./src/infrastructure/*"],
+      "@/components/*": ["./src/shared/ui/components/*"],
+      "@/ui/*": ["./src/shared/ui/*"],
+      "@/hooks/*": ["./src/shared/hooks/*"],
+      "@/utils/*": ["./src/shared/utils/*"],
+      "@/lib/*": ["./src/shared/lib/*"],
+      "@/types/*": ["./src/shared/types/*"],
+      "@/constants/*": ["./src/shared/constants/*"],
+      "@/config/*": ["./src/shared/config/*"],
+      "@/api/*": ["./src/shared/api/*"],
+      "@/assets/*": ["./src/shared/assets/*"],
+      "@/store/*": ["./src/app/store/*"],
+      "@/providers/*": ["./src/app/providers/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

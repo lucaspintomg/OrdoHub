@@ -1,0 +1,9 @@
+/* OrdoHub - Global Styles */
+
+/* Import design tokens first */
+@import './shared/ui/styles/tokens.css';
+
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

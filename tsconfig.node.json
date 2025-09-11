@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    /* Project References */
+    "composite": true,
+    "skipLibCheck": true,
+    
+    /* Module System */
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    
+    /* Interop */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    
+    /* Type Checking */
+    "strict": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    
+    /* Performance */
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.cache/typescript/tsbuildinfo-node.json"
+  },
+  "include": [
+    "vite.config.ts",
+    "vitest.config.ts", 
+    "postcss.config.js",
+    "tailwind.config.js",
+    "scripts/**/*"
+  ],
+  "exclude": [
+    "src/**/*"
+  ]
+}

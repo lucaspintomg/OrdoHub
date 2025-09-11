@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OrdoHub Test Examples > Snapshot Testing > should match snapshot 1`] = `
+<button
+  class="bg-blue-500 text-white px-4 py-2 rounded"
+  data-testid="test-button"
+>
+  Snapshot Test
+</button>
+`;

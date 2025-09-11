@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* App.css - Estilos específicos do componente App */
+
+/* Este arquivo pode ser usado para estilos específicos do App que não são cobertos pelo Tailwind */
+/* Por enquanto, deixamos vazio pois estamos usando apenas classes do Tailwind */
+
+.App-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  color: #61dafb;
+}
+
+.App-header p {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}

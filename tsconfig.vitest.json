@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    /* Test Environment Specific */
+    "composite": false,
+    "noEmit": true,
+
+    /* React 18 + JSX for Tests */
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["vitest/globals", "vitest", "@testing-library/jest-dom", "node"],
+
+    /* Test Performance */
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.cache/typescript/tsbuildinfo-vitest.json",
+
+    /* Allow test utilities */
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/__tests__/**/*",
+    "src/tests/**/*",
+    "vitest.config.ts",
+    "src/shared/config/test/**/*"
+  ]
+}

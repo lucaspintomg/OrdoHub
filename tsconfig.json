@@ -1,0 +1,116 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowJs": false,
+    "checkJs": false,
+
+    /* Module Resolution */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    
+    /* Emit */
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "importHelpers": true,
+
+    /* JSX - React 18 Otimizado */
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+
+    /* Type Checking - Strict Mode Completo */
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Path Mapping - Aliases Principais */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/config/*": ["./src/config/*"],
+      "@/api/*": ["./src/api/*"],
+      "@/assets/*": ["./src/assets/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/tests/*": ["./src/tests/*"],
+      "~/*": ["./public/*"]
+    },
+
+    /* Advanced Options */
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.cache/typescript/tsbuildinfo.json",
+    "assumeChangesOnlyAffectDirectDependencies": true,
+
+    /* Interop Constraints */
+    "verbatimModuleSyntax": false,
+    "allowArbitraryExtensions": false,
+
+    /* Language and Environment */
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false,
+
+    /* Output Formatting */
+    "pretty": true,
+    "preserveWatchOutput": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "*.config.ts",
+    "*.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "public",
+    ".vscode",
+    ".git",
+    "*.min.js"
+  ],
+  "ts-node": {
+    "esm": true,
+    "swc": true
+  }
+}

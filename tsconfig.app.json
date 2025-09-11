@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    /* Application Specific */
+    "composite": false,
+    "noEmit": true,
+    
+    /* React 18 Optimizations */
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["vite/client", "node"],
+    
+    /* Performance for Development */
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.cache/typescript/tsbuildinfo-app.json",
+    
+    /* Skip type checking for faster builds in dev */
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/__tests__/**/*",
+    "src/**/__mocks__/**/*"
+  ]
+}
